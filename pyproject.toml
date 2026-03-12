@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omniplan-mcp"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["mcp[cli]"]
+
+[project.scripts]
+omniplan-mcp = "omniplan_mcp.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
