@@ -58,7 +58,7 @@ async def run_omnijs(script: str, timeout: float = DEFAULT_TIMEOUT) -> Any:
 """.strip()
 
     outer = f"""
-const app = Application('OmniPlan 4');
+const app = Application('OmniPlan');
 const result = app.evaluateJavascript({_escape(wrapped)});
 result;
 """.strip()
